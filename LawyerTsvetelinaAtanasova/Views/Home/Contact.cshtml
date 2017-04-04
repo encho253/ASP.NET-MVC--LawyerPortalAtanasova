@@ -1,0 +1,80 @@
+﻿@model  LawyerTsvetelinaAtanasova.Models.ContactModelEn
+
+@{
+    //ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div id="wrapper">
+    <div id="contentwrap">
+        <div id="content">
+            <div class="contact">
+                <h2>
+                    <span class="contact-name"><b>Tsvetelina Atanasova</b></span>
+                </h2>
+                <br>
+                <h3><b>Contact</b></h3>
+
+                <div class="contact-image">
+
+                    <img src="~/Images/contact.jpg" alt="Picture" width="400" height="250" />
+
+                    @*<img src="~/GaleryImages/kontakt.jpg" alt="Снимка към контекта" align="middle" />*@
+
+                </div>
+
+                @*<p class="contact-position">ts@atanasova-lawyer.name</p>*@
+
+                <div class="contact-address">
+                    <span class="jicons-none">
+                    </span>
+                    <address>
+                        <span class="contact-street">
+
+                            12 Uzundjovska Str., floor 3 <br>
+                            Sofia 1000 Bulgaria<br>
+                            <br>
+                            ts@atanasova-lawyer.name<br>
+                            atanasova.cvetelina@gmail.com
+
+                        </span>
+                    </address>
+                </div>
+
+                <br>
+
+                <h3>Contact Form</h3>
+                <br>
+                @using (Html.BeginForm(new { @class = "contacts-form" }))
+                {
+                    @Html.LabelFor(model => model.NameEn, "Your name:")<br />
+                    @Html.TextBoxFor(model => model.NameEn, new { @class = "input-bg" })<br />
+                    @Html.ValidationMessageFor(model => model.NameEn)<br />
+
+                    @Html.LabelFor(model => model.EmailEn, "Your e-mail:")<br />
+                    @Html.TextBoxFor(model => model.EmailEn, new { @class = "input-bg" })<br />
+                    @Html.ValidationMessageFor(model => model.EmailEn)<br />
+
+                    @Html.LabelFor(model => model.MobileEn, "Your mobile phone:")<br />
+                    @Html.TextBoxFor(model => model.MobileEn, new { @class = "input-bg" })<br />
+                    @Html.ValidationMessageFor(model => model.MobileEn)<br />
+
+                    @Html.LabelFor(model => model.MessageEn, "Your message:") <br />
+                    @Html.TextAreaFor(model => model.MessageEn, new { @class = "textarea-bg", rows = 8 })<br />
+                    @Html.ValidationMessageFor(model => model.MessageEn)<br />
+
+                    <div class="g-recaptcha" data-sitekey=@System.Configuration.ConfigurationManager.AppSettings["ReCaptchaPublicKey"]></div>
+
+                    <br>
+
+                    <input type="submit" class="button-bg" value="Send" />
+                }
+
+                <br />
+                <h2>@TempData["message"]</h2>
+
+            </div>
+        </div>
+    </div>
+</div>

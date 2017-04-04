@@ -1,0 +1,300 @@
+﻿@charset "UTF-8";
+
+@font-face {
+    font-family: Bookman_Old_Style_300;
+    /*src: url('http://www.atanasova-lawyer.name/Bookman_Old_Style_300.font.js');*/
+}
+
+p {
+    font-family: Bookman_Old_Style_300;
+}
+
+body {
+    background-image: url('../Images/background.png');
+    background-color: #330006;
+    font-family: "Verdana",Serif;
+    color: #000;
+    margin: 0 auto;  
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    font-style: normal;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 971px;
+}
+
+#headerwrap {
+    width: 1024px;
+    float: left;
+    margin: 0 auto;
+    height: 130px;
+}
+
+#header {
+    width: 1024px;
+    height: 70px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 15px;
+    color: #FFF;
+    text-decoration: none;
+    pagging: 0 30px 0 30px;
+    position: relative;
+}
+
+#logo {
+    width: 265px;
+    height: 140px;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-top: 10px;
+    z-index: 1000;
+    float: left;
+}
+
+#slogan {
+    float: left;
+    text-align: center;
+    display: block;
+    width: 540px;
+    height: 100px;
+    padding-top: 40px;
+    font-family: Bookman Old Style;
+    font-size: 18px;
+    font-style: italic;
+}
+
+#languages {
+    position: absolute;
+    top: 45px;
+    right: 35px;
+}
+
+.clear {
+    clear: both;
+}
+
+.mod-languages {
+    float: right;
+}
+
+    .mod-languages li {
+        padding: 1px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+div.mod-languages ul {
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+}
+
+    div.mod-languages ul.lang-inline li {
+        display: inline;
+    }
+
+#navigationwrap {
+    background-image: url('../Images/head.png');
+    /*background-position: bottom;*/
+    width: 1024px;
+    float: left;
+    height: 138px;
+}
+
+#navigation {
+    padding-left: 420px;
+    margin-top: 6px;
+}
+
+    #navigation .menu {
+        height: 70px;
+        width: 676px;
+        font-family: Verdana, Geneva, sans-serif;
+        font-weight: bold;
+        font-size: 100%;
+    }
+
+    #navigation ul.menu {
+        padding: 0;
+        margin: 0;
+        display: inline;
+        list-style: none;
+        height: 90px;
+        width: 128px;
+    }
+
+        #navigation ul.menu a {
+            width: 128px;
+            height: 90px;
+            text-decoration: none;
+            color: #fff;
+            margin-right: 5px;
+        }
+
+        #navigation ul.menu li {
+            display: inline;
+            float: left;
+            list-style: none;
+            width: 128px;
+            height: 90px;
+            text-align: center;
+            padding-right: 3px;
+        }
+
+            #navigation ul.menu li a {
+                position: relative;
+                display: block;
+                width: 128px;
+                padding-top: 5px;
+                background: transparent;
+            }
+
+                #navigation ul.menu li a:hover,
+                ul.menu li a:focus,
+                ul.menu li a:active {
+                    background-image: url('../Images/hover.png');
+                    color: #C40018;
+                    background-repeat: no-repeat;
+                    background-position: left top;
+                }
+
+#contentwrap {
+    width: 1024px;
+    float: left;
+    margin: 0 auto;
+    padding-right: 429px;
+}
+
+#content {
+    /*background: #fff;*/
+    margin: 0 auto;
+    /* -webkit-box-shadow: 0px 0px 50px 45px #fff ;  Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    /*  box-shadow: 0px 0px 50px 45px #fff ; */
+    font-family: Bookman Old Style;
+    font-style: normal;
+    font-size: 18px;
+    width: 1024px;
+    background-image: url('../Images/center.png');
+    float: left;
+}
+
+.item-page {
+    padding: 0px 53px 8px 70px;
+}
+
+.contact-form {
+    display: block;
+    width: 550px;
+    height: 650px;
+    border: none;
+}
+
+.contact {
+    padding: 0px 90px 0px 110px;
+    font-family: Bookman Old Style;
+}
+
+.contact-emailto a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contact legend {
+    color: #ff0000;
+}
+
+.contact a {
+    color: #000;
+}
+
+.contact-image {
+
+    float: right;
+    margin-top: -64px;   
+}
+
+#footerwrap {
+    width: 1024px;
+    background-image: url('../Images/footer.png');
+    display: block;
+    height: 141px;
+    float: left;
+    margin: 0 auto;
+    clear: both;
+}
+
+#footer {
+    margin-top: 0px;
+    height: 141px;
+    float: left;
+    font-family: Bookman Old Style;
+    font-style: italic;
+    font-size: 16px;
+    color: #fff;
+}
+
+    #footer p {
+        padding-top: 0px;
+    }
+
+    #footer a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+.body-content {
+    padding-left: 0px;
+    padding-right: 15px;
+}
+
+.picture-size{
+ 
+    max-width:100%; 
+    height:auto;
+}
+
+.input-bg, .textarea-bg {
+    border: none;
+    background-color: #E2D6D6;
+    color: black;
+    width: 70.5%;
+    padding: 8px 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.button-bg {
+    padding: 9px 40px;
+    border-radius: 5px;
+    background: #E2D6D6;
+    border: none;
+    color: #080808;
+}
+.social > li {
+    margin-right: 10px;
+}
+
+.social li {
+    float: left;
+}
+
+.social {
+    float: right;
+    list-style: none;
+    margin: 50px;
+    padding: 0px;
+}
+/*.yoyo {
+    float: right;
+    margin-bottom: 10px;
+    text-align: right;
+}*/
+a:link, a:visited {
+    color: #b40601;
+}
+
